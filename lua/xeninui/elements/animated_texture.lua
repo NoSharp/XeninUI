@@ -4,7 +4,7 @@
 	Credits goes to Metamist for his previously closed source library Wyvern,
 		CupCakeR for various improvements, the animated texture VGUI panel, and misc.
 ]]
-
+ 
 local PANEL = {}
 
 AccessorFunc( PANEL, "m_paused", "Paused" )
