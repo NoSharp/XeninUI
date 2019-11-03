@@ -544,7 +544,7 @@ function XeninUI:DrawNPCOverhead(npc, tbl)
   local h = 64 * 3
 
   XeninUI:DrawRoundedBox(h / 2, x, y, width, h, Color(0, 0, 0, alpha * 0.95))
-  draw.SimpleText(str, "XeninUI.NPC.Overhead", x + h + (icon and 0 or 32 + 14) + textOffset, h / 2 + y, Color(225, 225, 225, alpha), icon and TEXT_ALIGN_LEFT or TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+  draw.SimpleText(str, "XeninUI.NPC.Overhead", x + (icon and h or width/2) + textOffset, h / 2 + y, Color(225, 225, 225, alpha), icon and TEXT_ALIGN_LEFT or TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 
   if (icon) then
     surface.SetDrawColor(255, 255, 255, alpha)
