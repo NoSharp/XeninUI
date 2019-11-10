@@ -22,7 +22,6 @@ if SERVER then
 
 	net.Receive( "XeninUI.FullClientInit", function( len, p )
 		if p.XeninUI_FullClientInit then
-			ErrorNoHalt( p:Nick() .. " -> already did init? Maybe sent net msg manually?\n" )
 			return
 		end
 
